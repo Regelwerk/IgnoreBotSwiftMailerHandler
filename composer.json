@@ -1,5 +1,5 @@
 {
-    "name": "regelwerk/ignore-bot-swift-mailer-handler",
+    "name": "regelwerk/ignore-bot-swift-mailer-handler-bundle",
     "description": "A monolog swift handler that ignores all requests from bots",
     "keywords": [ "monolog", "swift", "ignore", "bot" ],
     "type": "symfony-bundle",
