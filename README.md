@@ -55,17 +55,22 @@ Step 3: Edit app/config/config.yml
 
 add the following line to the parameters section:
 
+```
 parameters:
   monolog.handler.swift_mailer.class: Regelwerk\IgnoreBotSwiftMailerHandlerBundle\Handler\IgnoreBotSwiftMailerHandler
+```
 
 And set the swift mail handler id:
 
+```
 regelwerk_ignore_bot:
     handler: main
-
+```
 This is the id under monolog:handlers: where the entry with type: swift_mailer is defined.
 
 If you want to disable the bundle, just set
 
+```
 regelwerk_ignore_bot:
     enable: no
+```
