@@ -1,0 +1,24 @@
+{
+    "name": "regelwerk/ignore-bot-swift-mailer-handler",
+    "description": "A monolog swift handler that ignores all requests from bots",
+    "keywords": [ "monolog", "swift", "ignore", "bot" ],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+        "name": "Georg Gell/Regelwerk Datenmanagement GmbH",
+        "email": "gdev@regelwerk.at"
+    }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/symfony": "~2.6",
+        "vipx/bot-detect-bundle": "~2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Regelwerk\\IgnoreBotSwiftMailerHandlerBundle\\": ""
+        }
+    },
+    "target-dir" : "Regelwerk/IgnoreBotSwiftMailerHandlerBundle"
+}

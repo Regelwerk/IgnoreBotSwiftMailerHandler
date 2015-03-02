@@ -1,0 +1,9 @@
+parameters:
+    regelwerk_ignore_bot.handler: main
+
+services:
+    regelwerk_ignore_bot.bot_processor:
+        class: Regelwerk\IgnoreBotSwiftMailerHandlerBundle\Processor\BotProcessor
+        arguments:  ["@request_stack", "@vipx_bot_detect.detector", "%regelwerk_ignore_bot.enable%"]
+        tags:
+            - { name: monolog.processor, handler: %regelwerk_ignore_bot.handler% }
